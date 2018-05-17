@@ -3,13 +3,13 @@
 * Página do repositório do trabalho ([link GitHub](TODO)) 
 
 * Discente 1
-	* Nome: TODO
-	* Matrícula: TODO 
-	* Distribuição da nota (%): TODO
+	* Nome: Matheus Artur Cabral Costa
+	* Matrícula: 17212344
+	* Distribuição da nota (%): 50
 * Discente 2
-	* Nome: TODO
-	* Matrícula: TODO
-	* Distribuição da nota (%): TODO
+	* Nome: Luis Alberto Pontes Cabus Setton
+	* Matrícula: 17210977
+	* Distribuição da nota (%): 50
 * Discente 3
 	* Nome: TODO
 	* Matrícula: TODO
