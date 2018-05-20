@@ -3,10 +3,10 @@
  *
  *       Filename:  code.c
  *
- *    Description:  
+ *    Description: Testing C++ stuff in C
  *
- *        Version:  1.0
- *        Created:  05/20/2018 04:14:15 AM
+ *        Version:  0.1
+ *        Created:  05/20/2018 07:21:42 AM
  *       Revision:  none
  *       Compiler:  gcc
  *

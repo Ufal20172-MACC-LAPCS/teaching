@@ -10,10 +10,6 @@
 	* Nome: Luis Alberto Pontes Cabus Setton
 	* Matrícula: 17210977
 	* Distribuição da nota (%): 50
-* Discente 3
-	* Nome: TODO
-	* Matrícula: TODO
-	* Distribuição da nota (%): TODO		
 	
 # Resultados
 
