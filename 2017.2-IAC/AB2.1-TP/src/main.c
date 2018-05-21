@@ -39,6 +39,19 @@ void finish(int sig)
 
 int main(int argc, char *argv[], char *envp[])
 {
+    
+    if( argc != 2 )
+    {
+        printf("Failed, Invalid number of parameters\n");
+        return 0;
+
+    }
+    if( strcmp(argv[1], "ucp") != 0 && strcmp(argv[1], "ucp-mem") != 0 )
+    {
+        printf("Failed, you can only use ucp or ucp-mem as parameter\n");
+        return 0;
+    }
+
     pid = fork();
 
     char ucp[256], ucp_mem[256];
@@ -53,7 +66,7 @@ int main(int argc, char *argv[], char *envp[])
 
     if(pid < 0)
     {
-        perror("Error: fork failed");
+        perror("Error: ");
         exit(-1);
     }
     else if(pid > 0)
@@ -116,13 +129,13 @@ int main(int argc, char *argv[], char *envp[])
     {
         if( strcmp(argv[1], "ucp") == 0 ) /* Execute the UCP usage loop */
         {
-            for(;;){}
+            for(;;){} 
         }
         if( strcmp(argv[1], "ucp-mem") == 0 ) /* Execute the UCP and memory usage loop */
         {
             for(;;)
             {
-                malloc(1024*sizeof(int));
+                malloc(sizeof(100));
             }
         }
     }
