@@ -1,6 +1,6 @@
-## 
+#Instrucoes de instalacao
 
-# GIT
+## GIT
 
 * Instale o GIT e clone;
 
@@ -11,7 +11,7 @@
 $ git clone https://github.com/MatheusArtur/teaching.git
 ```
 
-# Compilação e Execução
+## Compilação e Execução
 
 ```
 $ cd teaching/2017.2-IAC/AB2.1-TP/src
