@@ -1,6 +1,6 @@
 # Identificação
 
-* Página do repositório do trabalho ([link GitHub](TODO)) 
+* Página do repositório do trabalho ([GitHub Repo](https://github.com/MatheusArtur/teaching)) 
 
 * Discente 1
 	* Nome: Matheus Artur Cabral Costa
@@ -13,6 +13,16 @@
 	
 # Resultados
 
+	## **Gráficos** de comportamento e métricas do processo
+
+	```C
+
+	```
+
+	![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+	##
+
 * TODO: Plotar um gráfico com os resultados das medições das seguintes métricas utilizadas para avaliar o comportamento do **processo filho**:
 	*  **UCP**: consumo da UCP em porcentagem.
 	*  **UCP-MEM**: consumo da memória principal em Kilobytes.
@@ -23,6 +33,8 @@
 # Discussão
 
 ## Utilização intensa da UCP
+
+
 
 TODO: explicar se o comportamento da curva **UCP** foi o esperado, sempre justificando sua resposta, referenciando o código fonte do programa e o gráfico do experimento realizado.
 

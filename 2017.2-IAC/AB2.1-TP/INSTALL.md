@@ -1,34 +1,40 @@
-# Instrucoes de instalacao
+# Instruções de instalação
 
-## GIT
+	## GIT
 
-* Instale o GIT e clone;
+		* Instale o GIT e clone o repositório;
 
-```
-# apt install git
-```
-```
-$ git clone https://github.com/MatheusArtur/teaching.git
-```
+		Abra o terminal, localize a pasta onde deseja salvar o projeto e digite os comandos:
 
-## Compilação e Execução
+		```
+		# apt install git
+		```
+		```
+		$ git clone https://github.com/MatheusArtur/teaching.git
+		```
 
-```
-$ cd teaching/2017.2-IAC/AB2.1-TP/src
-```
+	## Compilação e Execução
 
-```
-$ gcc main.c -o bin
-```
+		Ainda no terminal, na mesma pasta em que fez o Clone do repositório, localize a pasta **src**
 
-* Para execução do código com utilização intensa da UCP:
+		```
+		$ cd teaching/2017.2-IAC/AB2.1-TP/src
+		```
 
-```
-$ ./bin ucp
-```
+		Compile o código do programa **main.c**
 
-* Para execução do código com utilização intensa da UCP e da memória:
+		```
+		$ gcc main.c -o bin
+		```
 
-```
-$ ./bin ucp-mem
-```
+		* Para execução do código com utilização intensa da UCP, utilize o seguinte comando:
+
+		```
+		$ ./bin ucp
+		```
+
+		* Para execução do código com utilização intensa da UCP e da memória:
+
+		```
+		$ ./bin ucp-mem
+	```
