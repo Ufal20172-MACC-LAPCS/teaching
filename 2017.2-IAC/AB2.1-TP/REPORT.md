@@ -51,6 +51,44 @@ for(;;)
 
 # Discussão
 
+## Descrição do Código
+
+O programa pode receber os argumentos **ucp** ou **ucp-mem** como parâmetros de execução. Qualquer outro argumento, ou a ausência destes, é inválido, e o programa retorna uma mensagem adequada. 
+```C
+if( argc != 2 )
+{
+	printf("Failed, Invalid number of parameters\n");
+	return 0;
+
+}
+if( strcmp(argv[1], "ucp") != 0 && strcmp(argv[1], "ucp-mem") != 0 )
+{
+	printf("Failed, you can only use ucp or ucp-mem as parameter\n");
+	return 0;
+}
+```
+
+O processo PAI monitora o tempo, os processos de consumo de UCP e da Memória, os imprime na tela e os elimina quando o tempo limite é excedido. Dentro do código, após fork (criação do processo filho), é criada a string para verificar o consumo imediato da UCP e o consumo da Memória.
+
+```C
+void finish(int sig)
+{
+    kill(pid,SIGKILL); /* Kills the child proccess */
+}
+
+int main 
+	/*.. code ..*/
+	signal(SIGALRM,(void (*)(int))finish); /* Flag the function finish to kill the child processes after 10 seconds */
+	/*.. code ..*/
+	else if(pid > 0)
+	{
+	    alarm(10);
+	    /*.. code ..*/
+		wait(NULL);
+}
+```
+
+
 ## Utilização intensa da UCP
 
 TODO: explicar se o comportamento da curva **UCP** foi o esperado, sempre justificando sua resposta, referenciando o código fonte do programa e o gráfico do experimento realizado.
@@ -60,6 +98,8 @@ O nosso experimento foi realizado num notebook **ThinkPad** de configuração de
 Tínhamos a expectativa de que o consumo de processamento tivesse uma curva acentuada, porém gradual, com crescimento linear e apenas aritmético. 
 
 Porém, como se pode verificar no gráfico de "consumo somente do processador", o consumo de processamento em nosso experimento foi elevado desde o início, deixando a máquina quase irresponsiva durante quase todos os 10 segundos de duração da tarefa, fazendo com que nossa experiência não acontecesse conforme esperávamos.
+
+
 
 ## Utilização intensa da UCP e memória
 
