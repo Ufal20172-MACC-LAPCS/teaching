@@ -8,7 +8,7 @@ Compreender o consumo dos recursos do computador pelos processos. Investigar a u
 
 ## Instruções de instalação
 
-[GitHub Repo - Report](https://github.com/Ufal20172-MACC-LAPCS/teaching/tree/master/2017.2-IAC/AB2.1-TP/INSTALL.md)
+[GitHub Repo - Instalação](https://github.com/Ufal20172-MACC-LAPCS/teaching/tree/master/2017.2-IAC/AB2.1-TP/INSTALL.md)
 
 ## Relatório
 

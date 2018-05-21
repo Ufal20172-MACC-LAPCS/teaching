@@ -1,6 +1,6 @@
 # Identificação
 
-* Página do repositório do trabalho ([GitHub Repo](https://github.com/MatheusArtur/teaching)) 
+* Página do repositório do trabalho ([GitHub Repo](https://github.com/Ufal20172-MACC-LAPCS/teaching)) 
 
 * Discente 1
 	* Nome: Matheus Artur Cabral Costa
@@ -16,7 +16,7 @@
 	## **Gráficos** de comportamento e métricas do processo
 
 	```C
-
+	
 	```
 
 	![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
