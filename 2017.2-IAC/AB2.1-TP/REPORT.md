@@ -15,37 +15,48 @@
 
 ## **Gráficos** de comportamento e métricas do processo
 
-Utilizando o comando para consumo somente do processador 
+* Utilizando o comando para consumo somente do processador 
 
+Executa-se o programa utilizando o comando:
 ```
 $ ./bin ucp
 ```
-![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/cpu_cpu.png "Utilização da CPU")
 
-Utilizando o comando para consumo do processador juntamente com o consumo progressivo de memória
+O programa então processa o código, executando um loop infinito até que seja limitada a sua utilização da UCP pelo sistema operacional.
+```C
+for (;;){}
+```
+
+![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/cpu_cpu.png "Curva de utilização da CPU")
+
+* Utilizando o comando para consumo do processador juntamente com o consumo progressivo de memória
+
+Executa-se o programa utilizando o comando:
 
 ```
 $ ./bin ucp-mem
 ```
-![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/cpu_cpu-mem.png "Utilização da CPU")
-![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/mem_cpu-mem.png "Utilização da Memória")
 
-##
+O programa então processa o seguinte código, executando um loop infinito, alocando memória progressivamente, até que seja limitada a UCP ou o a Memória pelo sistema operacional.
+```C
+for(;;)
+{
+	malloc(sizeof(100));
+}
+```
 
-* TODO: Plotar um gráfico com os resultados das medições das seguintes métricas utilizadas para avaliar o comportamento do **processo filho**:
-	*  **UCP**: consumo da UCP em porcentagem.
-	*  **UCP-MEM**: consumo da memória principal em Kilobytes.
-* TODO: Cada métrica deve ser plotada em duas curvas separadas.
-* TODO: o eixo das abscissas deve representar o tempo medido a cada segundo e o eixo das coordenadas deve representar a métrica medida.
+![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/cpu_cpu-mem.png "Curva de utilização da CPU")
+![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/mem_cpu-mem.png "Curva de utilização da Memória")
 
 
 # Discussão
 
 ## Utilização intensa da UCP
 
-
-
 TODO: explicar se o comportamento da curva **UCP** foi o esperado, sempre justificando sua resposta, referenciando o código fonte do programa e o gráfico do experimento realizado.
+
+
+
 
 ## Utilização intensa da UCP e memória
 
