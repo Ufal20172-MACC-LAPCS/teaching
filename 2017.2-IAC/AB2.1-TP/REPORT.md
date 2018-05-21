@@ -68,7 +68,7 @@ if( strcmp(argv[1], "ucp") != 0 && strcmp(argv[1], "ucp-mem") != 0 )
 }
 ```
 
-O processo PAI monitora o tempo, os processos de consumo de UCP e da Memória, os imprime na tela e os elimina quando o tempo limite é excedido. Dentro do código, após fork (criação do processo filho), é criada a string para verificar o consumo imediato da UCP e o consumo da Memória.
+O processo PAI monitora o tempo, os processos de consumo de UCP e da Memória, os imprime na tela, e elimina o processo filho, encerrando o programa, quando o tempo limite é excedido. Dentro do código, após fork (criação do processo filho), é criada a string para verificar o consumo imediato da UCP e o consumo da Memória.
 
 ```C
 void finish(int sig)
@@ -91,17 +91,12 @@ int main
 
 ## Utilização intensa da UCP
 
-TODO: explicar se o comportamento da curva **UCP** foi o esperado, sempre justificando sua resposta, referenciando o código fonte do programa e o gráfico do experimento realizado.
-
 O nosso experimento foi realizado num notebook **ThinkPad** de configuração de processador Core Duo T2400 1.83ghz 2T, 32bits, com 3GB de memória RAM DDR-2.
 
 Tínhamos a expectativa de que o consumo de processamento tivesse uma curva acentuada, porém gradual, com crescimento linear e apenas aritmético. 
 
 Porém, como se pode verificar no gráfico de "consumo somente do processador", o consumo de processamento em nosso experimento foi elevado desde o início, deixando a máquina quase irresponsiva durante quase todos os 10 segundos de duração da tarefa, fazendo com que nossa experiência não acontecesse conforme esperávamos.
 
-
-
 ## Utilização intensa da UCP e memória
 
-TODO: explicar se o comportamento da curva **UCP-MEM** foi o esperado, sempre justificando sua resposta, referenciando o código fonte do programa e o gráfico do experimento realizado.
 
