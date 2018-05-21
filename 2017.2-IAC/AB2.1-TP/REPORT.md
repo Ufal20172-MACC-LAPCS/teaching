@@ -13,15 +13,24 @@
 	
 # Resultados
 
-	## **Gráficos** de comportamento e métricas do processo
+## **Gráficos** de comportamento e métricas do processo
 
-	```C
-	
-	```
+Utilizando o comando para consumo somente do processador 
 
-	![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+```
+$ ./bin ucp
+```
+![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/cpu_cpu.png "Utilização da CPU")
 
-	##
+Utilizando o comando para consumo do processador juntamente com o consumo progressivo de memória
+
+```
+$ ./bin ucp-mem
+```
+![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/cpu_cpu-mem.png "Utilização da CPU")
+![alt text](https://github.com/Ufal20172-MACC-LAPCS/teaching/blob/master/2017.2-IAC/AB2.1-TP/graphs/mem_cpu-mem.png "Utilização da Memória")
+
+##
 
 * TODO: Plotar um gráfico com os resultados das medições das seguintes métricas utilizadas para avaliar o comportamento do **processo filho**:
 	*  **UCP**: consumo da UCP em porcentagem.
