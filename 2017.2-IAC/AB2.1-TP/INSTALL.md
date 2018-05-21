@@ -18,6 +18,10 @@ $ git clone https://github.com/Ufal20172-MACC-LAPCS/teaching.git
 Ainda no terminal, na mesma pasta em que fez o Clone do repositório, localize a pasta **src**
 
 ```
+# apt install gcc
+```
+
+```
 $ cd teaching/2017.2-IAC/AB2.1-TP/src
 ```
 
@@ -29,12 +33,12 @@ $ gcc main.c -o bin
 
 * Para execução do código com utilização intensa da UCP, utilize o seguinte comando:
 
-```C
+```
 $ ./bin ucp
 ```
 
 * Para execução do código com utilização intensa da UCP e da memória:
 
-```C
+```
 $ ./bin ucp-mem
 ```
