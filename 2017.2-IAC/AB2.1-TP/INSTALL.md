@@ -10,7 +10,7 @@ Abra o terminal, localize a pasta onde deseja salvar o projeto e digite os coman
 # apt install git
 ```
 ```
-$ git clone https://github.com/MatheusArtur/teaching.git
+$ git clone https://github.com/Ufal20172-MACC-LAPCS/iac.git
 ```
 
 ## Compilação e Execução
