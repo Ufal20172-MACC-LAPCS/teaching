@@ -99,4 +99,16 @@ Porém, como se pode verificar no gráfico de "consumo somente do processador", 
 
 ## Utilização intensa da UCP e memória
 
+O experimento com consumo intenso de UCP e alocação progressiva de memória, por sua vez, teve os resultados que esperávamos. Como já conhecíamos o comportamento da UCP, e o código de alocação de memória em bytes previa um aumento linear da quantidade reservada,
+```C
+for(;;)
+{
+	malloc(sizeof(100));
+}
+```
+o gráfico da memória utilizada mostra uma curva, praticamente linear, até utilização de grande parte da memória disponível, antes dos 10 segundos de execução do programa. 
+
+Em alguns casos, com a memória já comprometida por outros aplicativos abertos, a pilha de execução estourou e o programa ficou travado por alguns instantes, além de perder a indicação da quantidade de memória que estava consumindo. 
+
+
 
