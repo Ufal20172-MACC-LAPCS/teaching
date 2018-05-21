@@ -29,12 +29,12 @@ $ gcc main.c -o bin
 
 * Para execução do código com utilização intensa da UCP, utilize o seguinte comando:
 
-```
+```C
 $ ./bin ucp
 ```
 
 * Para execução do código com utilização intensa da UCP e da memória:
 
-```
+```C
 $ ./bin ucp-mem
 ```
